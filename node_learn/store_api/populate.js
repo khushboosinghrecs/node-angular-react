@@ -1,0 +1,20 @@
+require('dotnev').config();
+const connectDB = require('.db/connect');
+const Product = require('./models/products');
+const jsonProducts = require('./products.json')
+
+const start = async () =>{
+    try{
+        console.log(process.env.MONGO_URI, 'Khushi');
+        await connectDB(process.env.MONGO_URI)
+        await Product.deleteMany()
+        await Product.create(jsonProducts)
+        console.log('Success');
+        process.exit(0)
+    } catch (err){
+        console.log(err);
+        process.exit(1)
+    }
+}
+
+start();

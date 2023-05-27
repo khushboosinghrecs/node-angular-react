@@ -1,0 +1,105 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+*, :focus, :hover {
+  outline: none;
+}
+
+.headerContent {
+  background-color: #2b5510;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 20px;
+  padding: .5rem;
+  display: flex;
+}
+
+.nav-bar {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-bar > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-bar > ul > li {
+  color: #fff;
+  padding: 0 .5rem;
+  list-style-type: none;
+}
+
+.card {
+  contain: content;
+  width: 20%;
+  border: 1px solid #d3d5df;
+  margin: 10px;
+  padding: 20px;
+  transition: transform .2s;
+  box-shadow: 0 4px 7px #dadce699;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  border: 2px solid #eaeaea;
+}
+
+.card h4, .card h6 {
+  margin: 0;
+  padding: 5px 0;
+}
+
+section {
+  padding: 10px;
+}
+
+.card-List {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.d-flex-space-between {
+  justify-content: space-between;
+  display: flex;
+}
+
+.search-btn {
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #2b5510;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.search-input {
+  border: 1px solid #d3d5df;
+  padding: .8rem;
+}
+
+.search-container {
+  margin-left: 20px;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.9e4c6fd2.css.map */
